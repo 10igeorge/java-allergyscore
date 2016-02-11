@@ -47,7 +47,11 @@ public class AppTest {
     App allergies = new App();
     assertEquals("pollen, tomatoes, shellfish, peanuts, eggs", allergies.allergyScore(87));
   }
-
+  @Test
+  public void allergyScore_returnsErrorIfNumberIsOutOfRange_error(){
+    App allergies = new App();
+    assertEquals("Please enter a number between 1 and 255", allergies.allergyScore(2344));
+  }
 
 
 }

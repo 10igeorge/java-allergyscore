@@ -32,6 +32,9 @@ public class App {
   public static String allergyScore(Integer score){
     ArrayList<String> totalAllergyArray = new ArrayList<String>();
     String totalAllergies = "";
+    if(score < 0 || score >=256){
+      return "Please enter a number between 1 and 255";
+    }
     if (score >= 128){
       totalAllergyArray.add("cats");
       score -=128;

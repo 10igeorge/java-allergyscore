@@ -1,1 +1,5 @@
-<h4>Your allergies are: $allergies.</h4>
+#if($allergies.equals("Please enter a number between 1 and 255"))
+  <h4>$allergies</h4>
+#else
+  <h4>Your allergies are: $allergies.</h4>
+#end
