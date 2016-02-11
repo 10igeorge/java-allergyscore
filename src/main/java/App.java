@@ -45,8 +45,12 @@ public class App {
       totalAllergyArray.add("eggs");
       score -=1;
     }
-    for (String key : totalAllergyArray){
-      totalAllergies += key;
+    for (Integer i = 0; i < totalAllergyArray.size(); i++){
+      if (i + 1 == totalAllergyArray.size()) {
+        totalAllergies += totalAllergyArray.get(i);
+      } else {
+        totalAllergies = totalAllergies + totalAllergyArray.get(i) + ", ";
+      }
     }
     return totalAllergies;
   }

@@ -42,6 +42,11 @@ public class AppTest {
     App allergies = new App();
     assertEquals("eggs", allergies.allergyScore(1));
   }
+  @Test
+  public void allergyScore_returnMultipleAllergies_PollenTomatoesShellfishPeanutsEggs(){
+    App allergies = new App();
+    assertEquals("pollen, tomatoes, shellfish, peanuts, eggs", allergies.allergyScore(87));
+  }
 
 
 
