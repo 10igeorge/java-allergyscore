@@ -15,16 +15,23 @@ public class AppIntegrationTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  // @Test
-  // public void rootTest() {
-  //     goTo("http://localhost:4567/");
-  //     assertThat(pageSource()).contains("Text on page");
-  // }
-  // @Test
-  // public void isALeapYear() {
-  //   goTo("http://localhost:4567");
-  //   fill("#year").with("2004");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("Correct response");
-  // }
+  @Test
+  public void rootTest() {
+      goTo("http://localhost:4567/");
+      assertThat(pageSource()).contains("Enter a number between 1-255 and see what your allergies are");
+  }
+  @Test
+  public void returnsAllergies() {
+    goTo("http://localhost:4567");
+    fill("#userScore").with("208");
+    submit(".btn");
+    assertThat(pageSource()).contains("cats, pollen, tomatoes");
+  }
+  @Test
+  public void returnsError(){
+    goTo("http://localhost:4567");
+    fill("#userScore").with("2208");
+    submit(".btn");
+    assertThat(pageSource()).contains("Please enter a number between 1 and 255");
+  }
 }

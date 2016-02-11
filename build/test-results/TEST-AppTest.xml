@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-02-11T19:04:04" hostname="epicodus-65.local" time="0.002">
+<testsuite name="AppTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-02-11T19:28:40" hostname="epicodus-65.local" time="0.001">
   <properties/>
-  <testcase name="allergyScore_returnsPeanutsIf2OrHigher_Peanuts" classname="AppTest" time="0.001"/>
+  <testcase name="allergyScore_returnsErrorIfNumberIsOutOfRange_error" classname="AppTest" time="0.0"/>
+  <testcase name="allergyScore_returnsPeanutsIf2OrHigher_Peanuts" classname="AppTest" time="0.0"/>
   <testcase name="allergyScore_returnsPollenIf64OrHigher_Pollen" classname="AppTest" time="0.0"/>
   <testcase name="allergyScore_returnsShellfishIf4OrHigher_Shellfish" classname="AppTest" time="0.0"/>
   <testcase name="allergyScore_returnsChocolateIf32OrHigher_Chocolate" classname="AppTest" time="0.0"/>
