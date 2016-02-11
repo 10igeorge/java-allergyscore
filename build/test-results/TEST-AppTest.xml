@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-11T18:50:22" hostname="epicodus-65.local" time="0.001">
+<testsuite name="AppTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-02-11T18:56:14" hostname="epicodus-65.local" time="0.002">
   <properties/>
-  <testcase name="allergyScore_returnsCatsIf128OrHigher_Cats" classname="AppTest" time="0.001"/>
+  <testcase name="allergyScore_returnsPeanutsIf2OrHigher_Peanuts" classname="AppTest" time="0.001"/>
+  <testcase name="allergyScore_returnsPollenIf64OrHigher_Pollen" classname="AppTest" time="0.0"/>
+  <testcase name="allergyScore_returnsShellfishIf4OrHigher_Shellfish" classname="AppTest" time="0.0"/>
+  <testcase name="allergyScore_returnsChocolateIf32OrHigher_Chocolate" classname="AppTest" time="0.0"/>
+  <testcase name="allergyScore_returnsCatsIf128OrHigher_Cats" classname="AppTest" time="0.0"/>
+  <testcase name="allergyScore_returnsTomatoesIf16OrHigher_Tomatoes" classname="AppTest" time="0.001"/>
+  <testcase name="allergyScore_returnsStrawberriesIf8OrHigher_Strawberries" classname="AppTest" time="0.0"/>
+  <testcase name="allergyScore_returnsEggsIf1OrHigher_Eggs" classname="AppTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

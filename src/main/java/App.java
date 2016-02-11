@@ -17,6 +17,34 @@ public class App {
       totalAllergyArray.add("cats");
       score -=128;
     }
+    if (score >= 64){
+      totalAllergyArray.add("pollen");
+      score -=64;
+    }
+    if (score >= 32){
+      totalAllergyArray.add("chocolate");
+      score -=32;
+    }
+    if (score >= 16){
+      totalAllergyArray.add("tomatoes");
+      score -=16;
+    }
+    if (score >= 8){
+      totalAllergyArray.add("strawberries");
+      score -=8;
+    }
+    if (score >= 4){
+      totalAllergyArray.add("shellfish");
+      score -=4;
+    }
+    if (score >= 2){
+      totalAllergyArray.add("peanuts");
+      score -=2;
+    }
+    if (score >= 1){
+      totalAllergyArray.add("eggs");
+      score -=1;
+    }
     for (String key : totalAllergyArray){
       totalAllergies += key;
     }
